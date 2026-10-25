@@ -31,13 +31,14 @@
           <label for="last_name">Фамилия</label>
           <input id="last_name" type="text" name="last_name" placeholder="Иванов">
           <label for="email">Email</label>
-          <input id="email" type="email" required class="email notnull" name="email" placeholder="example@mail.by">
+          <input id="email" type="email" required class="email notnull" name="email" placeholder="example@mail.by"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
           <label for="phone">Телефон</label>
-          <input id="phone" type="text" name="phone" required class="notnull"
-            placeholder="+375 (код оператора) 111-11-11">
+          <input id="phone" type="tel" name="phone" required class="notnull"
+            placeholder="+375 (код оператора) 111-11-11" pattern="^\+?[0-9\s\-\(\)]{7,20}$">
           <label for="country">Страна</label>
           <select id="country" name="country">
-            <option value="by" selected>Беларусь</option>
+            <option value="by">Беларусь</option>
             <option value="ru">Россия</option>
             <option value="ua">Украина</option>
             <option value="pl">Польша</option>
@@ -47,9 +48,10 @@
             <option value="us">США</option>
           </select>
           <label for="password">Пароль</label>
-          <input id="password" type="password" name="password" placeholder="Мин. 8 символов">
+          <input id="password" type="password" name="password" placeholder="Мин. 8 символов" pattern=".{8,32}">
           <label for="password_confirm">Подтвердите пароль</label>
-          <input id="password_confirm" type="password" name="password_confirm" placeholder="Повторите пароль">
+          <input id="password_confirm" type="password" name="password_confirm" placeholder="Повторите пароль"
+            pattern=".{8,32}">
         </fieldset>
         <fieldset class="account-action">
           <label>
@@ -58,7 +60,8 @@
               услуги</a>
           </label>
           <label>
-            <input type="checkbox" name="ww_submit_confirm" checked>&nbsp;Отметьте для согласия на обработку персональных данных
+            <input type="checkbox" name="ww_submit_confirm" checked>&nbsp;Отметьте для согласия на обработку
+            персональных данных
             в соответствии с <a href="/соглашение-об-обработке-персональных-данных" target="_blank"
               rel="noopener">Соглашением об обработке персональных данных</a>
           </label>
