@@ -55,7 +55,7 @@ h2 {
   border-top-right-radius: 5px;
   display: grid;
   padding-left: 26px;
-  padding-right: 26px;
+  padding-right: 25px;
 }
 
 .account-info legend {
@@ -64,30 +64,52 @@ h2 {
   padding-left: 12px;
   margin-left: -26px;
   padding-right: 12px;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .account-info label {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   display: inline-block;
   margin-bottom: 6px;
-  letter-spacing: 0.4px;
+  letter-spacing: -0.2px;
 }
 
 .account-info input {
   border-radius: 5px;
-  padding-top: 8px;
   padding-right: 9px;
-  padding-bottom: 6px;
   padding-left: 9px;
   font-size: 18px;
   border: 1px solid #c0cad5;
   display: inline-block;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
   box-sizing: border-box;
   letter-spacing: -0.2px;
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.07);
+}
+
+#first_name {
+  padding-top: 7px;
+  padding-bottom: 6px;
+  margin-bottom: 17px;
+}
+
+#last_name {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 17px;
+}
+
+#email {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 16px;
+}
+
+#phone {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 16px;
 }
 
 .account-info input:last-child {
@@ -101,17 +123,34 @@ h2 {
   -webkit-appearance: none;
   appearance: none;
   font-size: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   padding-left: 9px;
   padding-right: 9px;
   padding-top: 7px;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.07);
 }
 
+#password {
+  padding-top: 6px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+#password_confirm {
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
 .account-action {
+  border-top: 0 solid #c0cad5;
+  border-bottom: 1px solid #c0cad5;
+  border-left: 1px solid #c0cad5;
+  border-right: 1px solid #c0cad5;
+  max-width: 100%;
   background-color: #f0f0f2;
   display: grid;
+  box-sizing: border-box;
   padding-top: 17px;
   padding-left: 30px;
   padding-right: 25px;
@@ -124,7 +163,7 @@ h2 {
 .account-action label {
   display: inline-block;
   position: relative;
-  padding-left: 28px;
+  padding-left: 30px;
   /* Прячем пробел */
   text-indent: -4px;
   line-height: 1.4;
@@ -168,10 +207,22 @@ h2 {
   margin-bottom: 10px;
 }
 
+.btn:hover {
+  background: linear-gradient(to bottom, #729dcc 0%, #24568b 100%);
+}
+
 .foot {
-    color: #C7CBDB;
-    font-size: 15px;
-    text-align: center;
-    padding-top: 13px;
-    padding-bottom: 20px;
+  color: #c7cbdb;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 20px;
+}
+
+/* ПЛАНШЕТЫ */
+@media (max-width: 767px) {
+}
+
+/* МОБИЛЬНЫЕ УСТРОЙСТВА */
+@media (max-width: 479px) {
 }
